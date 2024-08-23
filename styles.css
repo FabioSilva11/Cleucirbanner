@@ -1,0 +1,20 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.image-viewer {
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 10px;
+}
