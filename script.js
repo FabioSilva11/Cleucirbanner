@@ -37,16 +37,12 @@ uploadImage.addEventListener('change', function(event) {
                 // Limpar o canvas e desenhar a imagem cortada
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.drawImage(userImage, x, y, cropWidth, cropHeight, 0, 0, defaultImageSize.width, defaultImageSize.height);
+                if (userImage) {
+        ctx.drawImage(defaultImage, 0, 0, defaultImageSize.width, defaultImageSize.height);
+    }
             };
         };
         reader.readAsDataURL(file);
-    }
-});
-
-// Mesclar as imagens
-mergeButton.addEventListener('click', () => {
-    if (userImage) {
-        ctx.drawImage(defaultImage, 0, 0, defaultImageSize.width, defaultImageSize.height);
     }
 });
 
